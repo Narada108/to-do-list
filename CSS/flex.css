@@ -1,0 +1,32 @@
+.flex {
+    display: flex;
+    max-width: 600px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+@media (max-width: 767px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+}
+
+.flex-item {
+    flex-basis: 34%;
+    margin: 20px;
+}
+
+@media (max-width: 767px) {
+    .flex-item {
+        flex-basis: 34%;
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 500px) {
+    .flex-item {
+        flex-basis: 51%;
+        flex-grow: 1;
+    }
+}
